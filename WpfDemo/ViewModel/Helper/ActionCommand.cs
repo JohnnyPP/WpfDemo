@@ -50,12 +50,15 @@ namespace WpfDemo.ViewModel.Helper
 
         public bool CanExecute(object parameter)
         {
-            throw new NotImplementedException();
+            return IsEnabled;
         }
 
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            if(_action != null)
+            {
+                _action();
+            }
         }
 
         #endregion
