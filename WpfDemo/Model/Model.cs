@@ -23,11 +23,17 @@ namespace WpfDemo
             }
         }
 
-
         #endregion
+
         #region Constructors
 
+        public Model()
+        {
+            _click = 0;
+        }
+
         #endregion
+
         #region Methods
 
         public void IncrementTextBox()
@@ -35,6 +41,7 @@ namespace WpfDemo
             Click++;
         }
         #endregion
+
         #region INotifyPropertyChanged implementation
 
         public event PropertyChangedEventHandler PropertyChanged;
