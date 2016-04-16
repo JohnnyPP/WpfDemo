@@ -9,6 +9,32 @@ namespace WpfDemo
 {
     public class Model : INotifyPropertyChanged
     {
+        #region Properties
+
+        private int _click;
+
+        public int Click
+        {
+            get { return _click; }
+            set
+            {
+                _click = value;
+                OnPropertyChanged("Click");
+            }
+        }
+
+
+        #endregion
+        #region Constructors
+
+        #endregion
+        #region Methods
+
+        public void IncrementTextBox()
+        {
+            Click++;
+        }
+        #endregion
         #region INotifyPropertyChanged implementation
 
         public event PropertyChangedEventHandler PropertyChanged;

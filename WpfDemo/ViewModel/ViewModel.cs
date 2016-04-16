@@ -36,7 +36,7 @@ namespace WpfDemo
 
         private void ButtonClickCommand()
         {
-            throw new NotImplementedException();
+            Model.IncrementTextBox();
         }
 
         #endregion
