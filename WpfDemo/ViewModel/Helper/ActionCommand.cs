@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace WpfDemo.ViewModel.Helper
+namespace WpfDemo
 {
-    class ActionCommand : ICommand
+    public class ActionCommand : ICommand
     {
         #region Fields
 

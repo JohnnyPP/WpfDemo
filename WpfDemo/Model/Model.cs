@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfDemo.Model
+namespace WpfDemo
 {
-    class Model
+    public class Model
     {
     }
 }
