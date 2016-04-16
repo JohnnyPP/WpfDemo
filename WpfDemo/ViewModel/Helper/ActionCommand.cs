@@ -9,6 +9,13 @@ namespace WpfDemo.ViewModel.Helper
 {
     class ActionCommand : ICommand
     {
+        private Action _action;
+
+        public ActionCommand(Action command)
+        {
+            _action = command;
+        }
+
         #region ICommand implementation
 
         public event EventHandler CanExecuteChanged;
