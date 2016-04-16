@@ -17,8 +17,8 @@ namespace WpfDemo
         public ViewModel()
         {
             Model = new Model();
+            ButtonClick = new ActionCommand(ButtonClickCommand);
         }
-
 
         #endregion
 
@@ -29,12 +29,15 @@ namespace WpfDemo
         public Model Model { get; set; }
         public ActionCommand ButtonClick { get; set; }
 
-
         #endregion
 
 
         #region Methods
 
+        private void ButtonClickCommand()
+        {
+            throw new NotImplementedException();
+        }
 
         #endregion
     }

@@ -20,9 +20,14 @@ namespace WpfDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        ViewModel vm;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            vm = new ViewModel();
+            DataContext = vm;
         }
     }
 }
