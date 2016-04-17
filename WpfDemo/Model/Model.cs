@@ -23,6 +23,19 @@ namespace WpfDemo
             }
         }
 
+        private int _resetCounterClick;
+
+        public int ResetCounterClick
+        {
+            get { return _resetCounterClick; }
+            set
+            {
+                _resetCounterClick = value;
+                OnPropertyChanged("ResetCounterClick");
+            }
+        }
+
+
         #endregion
 
         #region Constructors
@@ -30,6 +43,7 @@ namespace WpfDemo
         public Model()
         {
             _click = 0;
+            _resetCounterClick = 0;
         }
 
         #endregion
@@ -44,6 +58,7 @@ namespace WpfDemo
         public void ResetTextBox()
         {
             Click = 0;
+            ResetCounterClick++;
         }
 
         #endregion
