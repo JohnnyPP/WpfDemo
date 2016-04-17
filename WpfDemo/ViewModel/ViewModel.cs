@@ -18,6 +18,7 @@ namespace WpfDemo
         {
             Model = new Model();
             ButtonClick = new ActionCommand(ButtonClickCommand);
+            ButtonClickReset = new ActionCommand(ButtonClickResetCommand);
         }
 
         #endregion
@@ -28,6 +29,7 @@ namespace WpfDemo
         // To access Model all namespaces must be changed to WpfDemo
         public Model Model { get; set; }
         public ActionCommand ButtonClick { get; set; }
+        public ActionCommand ButtonClickReset { get; set; }
 
         #endregion
 
@@ -37,6 +39,11 @@ namespace WpfDemo
         private void ButtonClickCommand()
         {
             Model.IncrementTextBox();
+        }
+
+        private void ButtonClickResetCommand()
+        {
+            Model.ResetTextBox();
         }
 
         #endregion

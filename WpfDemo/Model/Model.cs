@@ -40,6 +40,12 @@ namespace WpfDemo
         {
             Click++;
         }
+
+        public void ResetTextBox()
+        {
+            Click = 0;
+        }
+
         #endregion
 
         #region INotifyPropertyChanged implementation
